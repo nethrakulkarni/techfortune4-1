@@ -1,0 +1,39 @@
+apt-get update
+
+apt-get install tomcat7 
+
+or
+
+apt-get install tomcat8
+
+apt-get install tomcat8-admin tomcat8-docs tomcat8-examples
+
+---To change the port number-----
+
+sudo gedit etc/tomcat8/server.xml
+
+find 8080 port and change it your wish
+ 
+
+--To add an user ----
+
+sudo gedit etc/tomcat8/tomcat-users.xml
+
+Add 
+<user username="admin" password="tomcat" roles="manager-gui,manager-script,admin-gui"/>
+
+just below the tomcat user section.
+
+---Restart your tomcat server---------
+
+sudo service tomcat8 restart
+
+sudo service tomcat8 status
+
+
+----Browse the tomcat url in a browser----
+
+localhost:8585
+
+
+choose webapps
