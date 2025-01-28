@@ -1,0 +1,12 @@
+{
+    "format_version": "1.2",
+    "terraform_version": "1.9.4",
+    "variables": {
+        "cloudwatch_rule": {
+            "value": "lambda_cw_rule"
+        },
+        "env": {
+            "value": "dev"
+        },
+},
+}
